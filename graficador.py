@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
-vec=np.loadtxt('filename.txt',usecols=0)
+vec=np.loadtxt('datos.txt',usecols=0)
 
 Z=np.zeros(shape=(100,100))
 
