@@ -4,13 +4,13 @@ from mpl_toolkits.mplot3d import Axes3D
 
 vec=np.loadtxt('datos.txt',usecols=0)
 
-Z=np.zeros(shape=(100,100))
+Z=np.zeros(shape=(101,101))
 
     
-for i in range(100):
-    Z[i,:]=vec[i*100:(i+1)*100]
+for i in range(101):
+    Z[i,:]=vec[i*101:(i+1)*101]
     
-X=np.array(range(100))
+X=np.array(range(101))
 Y=X
 X,Y=np.meshgrid(X,Y)
 fig=plt.figure()
